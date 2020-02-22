@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="noindex, nofollow">
+  <title>見出しナビゲーション | DEMOページ</title>
+</head>
+<body class="column2 side-left">
+  <div class="wrap">
+    <header>
+      <div class="header-image">
+        <div class="logo">見出しナビゲーション</div>
+      </div>
+    </header>
+    <div class="content">
+      <main>
+        <article class="detail" >
+          <div class="entry-header">
+            <h1 class="entry-title"><a href="#">見出しナビゲーション</a></h1>
+          </div>
+          <div class="entry-content">
+            <h2>タイトル１</h2>
+            <h3>サブタイトル１－１</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <h3>サブタイトル１－２</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <h2>タイトル２</h2>
+            <h3>サブタイトル２－１</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <h3>サブタイトル２－２</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <h2>タイトル３</h2>
+            <h3>サブタイトル３－１</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <h3>サブタイトル３－２</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <h2>タイトル４</h2>
+            <h3>サブタイトル４－１</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <h3>サブタイトル４－２</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <h2>タイトル５</h2>
+            <h3>サブタイトル５－１</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <h3>サブタイトル５－２</h3>
+            <h4>XXXXXXXXXXXXXXX</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+  
+            <h2 id="usage">使い方</h2>
+            <p>jQueryでセレクトボックスを指定してsearchBoxを呼び出すと検索機能付きのセレクトボックスになります。以下の例はオプションでセレクトボックスの表示幅を指定しています。"mode :2" を渡すと任意の文字を設定することが出来るのでタグの追加などにも利用が可能となっています。</p>
+            <h4>Javascript</h4>
+            <pre class="code">
+&lt;script src="https://demo.isystk.com/jquery-searchbox/js/jquery-searchbox.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+$(function() {
+$('<セレクトボックスのセレクタ>').searchBox({elementWidth: '250', mode: 1});
+});
+&lt;/script&gt;
+</pre>
+            <h4>Css</h4>
+            <pre class="code">
+.searchBoxElement{
+  background-color: white;
+  border: 1px solid #aaa;
+  position: absolute;
+  max-height: 114px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+  list-style: none;
+  z-index: 1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.searchBoxElement span{
+  padding: 0 5px;
+}
+.searchBoxElement::-webkit-scrollbar {
+  display:none;
+}
+.searchBoxElement li{
+  background-color: white;
+  color: black;
+}
+.searchBoxElement li:hover{
+  background-color: #50a0ff;
+  color: white;
+}
+.searchBoxElement li.selected{
+  background-color: #50a0ff;
+  color: white;
+}  
+</pre>
+            <h2 id="source">ソースコード</h2>
+            <a href="https://github.com/isystk/jquery-searchbox">https://github.com/isystk/jquery-searchbox</a>
+            
+          </div>
+        </article>
+      </main>
+      <aside class="side-left">
+        <div id="sticky-navigator">
+        </div>
+      </aside>
+    </div>
+    <footer class="footer">
+      <section class="footer1"></section>
+      <section class="footer2">© 2020 isystk.com</section>
+    </footer>
+  </div>
+</body>
+</html>
