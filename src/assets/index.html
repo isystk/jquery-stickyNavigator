@@ -57,54 +57,58 @@
             <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
   
             <h2 id="usage">使い方</h2>
-            <p>jQueryでセレクトボックスを指定してsearchBoxを呼び出すと検索機能付きのセレクトボックスになります。以下の例はオプションでセレクトボックスの表示幅を指定しています。"mode :2" を渡すと任意の文字を設定することが出来るのでタグの追加などにも利用が可能となっています。</p>
+            <p>jQueryでメニューを表示したいエリアを指定してstickyNavigatorを呼び出すと見出しに利用している h2、h3 タグがメニューに表示されます。メニューに表示されたリンクをクリックすると該当箇所までページ内スクロールして表示されます。<strong>※ メニューを表示するエリアの先祖要素に override 要素が指定されている場合はstickyが効かないのでご注意ください。</strong></p>
             <h4>Javascript</h4>
             <pre class="code">
-&lt;script src="https://demo.isystk.com/jquery-searchbox/js/jquery-searchbox.js"&gt;&lt;/script&gt;
+&lt;script src="https://demo.isystk.com/jquery-stickyNavigator/js/jquery-stickyNavigator.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
 $(function() {
-$('<セレクトボックスのセレクタ>').searchBox({elementWidth: '250', mode: 1});
+$('<メニューを表示したいエリアのセレクタ>').stickyNavigator({wrapselector: '<記事内容が記載されているエリアのセレクタ>'});
 });
 &lt;/script&gt;
 </pre>
             <h4>Css</h4>
             <pre class="code">
-.searchBoxElement{
-  background-color: white;
-  border: 1px solid #aaa;
-  position: absolute;
-  max-height: 114px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin: 0;
-  padding: 0;
-  line-height: 23px;
-  list-style: none;
-  z-index: 1;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+#sticky-navigator {
+background:#fff;
+line-height: 1.6;
+color: #555;
+font-size: 0.9em;
+box-shadow:0px 0px 5px;
+border:1px solid #f4f4f4;
+margin-bottom: 48px;
+padding: 10px
 }
-.searchBoxElement span{
-  padding: 0 5px;
+#sticky-navigator ul {
+padding: 0px;
 }
-.searchBoxElement::-webkit-scrollbar {
-  display:none;
+#sticky-navigator ul li:first-child {
+border-top: none;
+padding-top: 8px;
 }
-.searchBoxElement li{
-  background-color: white;
-  color: black;
+#sticky-navigator ul li {
+list-style: none;
+line-height: 1.4;
 }
-.searchBoxElement li:hover{
-  background-color: #50a0ff;
-  color: white;
+#sticky-navigator ul li.nav-h2 {
+margin-left: 10px;
+padding-top: 6px;
+padding-bottom: 6px;
 }
-.searchBoxElement li.selected{
-  background-color: #50a0ff;
-  color: white;
-}  
+#sticky-navigator ul li.nav-h3 {
+margin-left: 10px;
+}
+#sticky-navigator ul li.current {
+background-color: #dadde1;
+}
+#sticky-navigator {
+position: -webkit-sticky;
+position: sticky;
+top: 5px;
+}
 </pre>
             <h2 id="source">ソースコード</h2>
-            <a href="https://github.com/isystk/jquery-searchbox">https://github.com/isystk/jquery-searchbox</a>
+            <a href="https://github.com/isystk/jquery-stickyNavigator">https://github.com/isystk/jquery-stickyNavigator</a>
             
           </div>
         </article>

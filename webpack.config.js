@@ -68,7 +68,7 @@ const webpackConfig = {
       [
         {
           context: "assets/js",
-          from: "jquery-searchbox.js",
+          from: "jquery-stickyNavigator.js",
           to: "js"
         }
       ],

@@ -309,26 +309,6 @@ margin-bottom: 64px;
 width:100%;
 }
 
-/* トップ */
-article.top {
-background-color: #fff;
-box-shadow:0px 0px 5px;
-margin-bottom: 16px;
-}
-article.top .category_link {
-background: #f8a900;
-color: #fff;
-padding: 6px;
-}
-article.top .entry-header .entry-title {
-font-size: 1.2em;
-padding: 16px 0 0 16px;
-margin: 0;
-}
-article.top a {
-color: #383838;
-text-decoration:none;
-}
 /* 投稿 */
 article.detail {
 background-color: #fff;
@@ -389,6 +369,23 @@ margin: 12px 0 12px 0;
 clear: both;
 }
 
+/* 蛍光ペン風のマーカー線 */
+.entry-content strong.active{
+background-position: -100% .5em;
+}
+.entry-content strong {
+background: linear-gradient(transparent 60%, #ffff66 60%);
+background-image: -webkit-linear-gradient(left, transparent 50%, #ffff66 50%);
+background-image: -moz-linear-gradient(left, transparent 50%, #ffff66 50%);
+background-image: -ms-linear-gradient(left, transparent 50%, #ffff66 50%);
+background-image: -o-linear-gradient(left, transparent 50%, #ffff66 50%);
+background-image: linear-gradient(left, transparent 50%, #ffff66 50%);
+background-repeat: repeat-x;
+background-size: 200% .8em;
+background-position: 0 .5em;
+transition: all 3s ease;
+}
+	
 .side-menu .title{
 display:-webkit-box;
 display:-ms-flexbox;

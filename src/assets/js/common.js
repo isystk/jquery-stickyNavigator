@@ -67,9 +67,6 @@ $(function() {
 	// ページ内見出しナビゲーション
 	$('#sticky-navigator').stickyNavigator({wrapselector: '.entry-content'});
 
-	// 検索機能付きセレクトボックス
-	$('.js-searchBox').searchBox();
-
 });
 
 
